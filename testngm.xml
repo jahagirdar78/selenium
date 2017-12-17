@@ -1,0 +1,17 @@
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
+ 
+<suite name="com.test.Methods">
+	<test name="testngTest">
+ 
+			<groups>
+                    <dependencies>
+                          <group name="FirstGroup" depends-on="SecondGroup"></group>
+                    </dependencies>
+                </groups>
+	
+		<classes>
+			<class name="com.test.Methods.Dependsonmethodtestcases" />
+		</classes>
+		
+	</test>
+</suite>
